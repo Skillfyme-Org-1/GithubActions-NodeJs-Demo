@@ -21,7 +21,7 @@ jobs:
         - operating_system: ubuntu-latest
           artifact_name: artifact-node-windows
         - operating_system: windows-latest
-          artifact_name: artifact_node-ubuntu
+          artifact_name: artifact-node-ubuntu
     runs-on: ${{ matrix.operating_system }}
     steps:
     - name: Clone the repo
