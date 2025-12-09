@@ -1,4 +1,4 @@
-name: Build nodejs application
+name: build nodejs application
 on:
   # 'on' means mutliple triggers when this workflow can run such as push and pull request events as mentioned below
   workflow_dispatch:
@@ -19,9 +19,9 @@ jobs:
         exclude:
         # dont execute these below combinations
         - operating_system: ubuntu-latest
-          artifact_name: artifact_name_windows
+          artifact_name: artifact-node-windows
         - operating_system: windows-latest
-          artifact_name: artifact_name_ubuntu
+          artifact_name: artifact_node-windows
     runs-on: ${{ matrix.operating_system }}
     steps:
     - name: Clone the repo
